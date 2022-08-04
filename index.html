@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>icoder- Everything you want about coding blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:aqua;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" class="">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: rgb(193, 229, 246);">
+                    <button class="btn btn-outline-light" type="submit" style="background-color:rgb(17, 213, 177);">Search</button>
+                </form>
+                <div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#loginModal" style="background-color:rgb(17, 213, 177);">LogIn</button>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color:rgb(17, 213, 177);">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to iCoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--`signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SignUp-create a new account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Name</label>
+                            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to iCoder.</h5>
+                    <p>Technology, Developement And Coding.</p>
+                    <button class="btn btn-danger ">Technology</button>
+                    <button class="btn btn-success ">Web Developement</button>
+                    <button class="btn btn-primary ">Tech News</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best coding and tech blogs.</h5>
+                    <p>Technology, Developement And Coding.</p>
+                    <button class="btn btn-danger ">Technology</button>
+                    <button class="btn btn-success ">Web Developement</button>
+                    <button class="btn btn-primary ">Tech News</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Impressive and Informative blogs.</h5>
+                    <p>Technology, Developement And Coding.</p>
+                    <button class="btn btn-danger ">Technology</button>
+                    <button class="btn btn-success ">Web Developement</button>
+                    <button class="btn btn-primary ">Tech News</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-4 ">
+        <div class="row mb-2 ">
+            <div class="col-md-6 ">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                    <div class="col p-4 d-flex flex-column position-static ">
+                        <strong class="d-inline-block mb-2 text-primary ">World</strong>
+                        <h3 class="mb-0 ">Tech News</h3>
+                        <div class="mb-1 text-muted ">Nov 12</div>
+                        <p class="card-text mb-auto ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum libero ducimus. Quos optio ipsam sed, consequuntur maiores mollitia numquam.</p>
+                        <a href="# " class="stretched-link ">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block ">
+                        <img class="bd-placeholder-img " width="200 " height="250 " src="https://source.unsplash.com/500x700/?bluetooth " alt=" ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                    <div class="col p-4 d-flex flex-column position-static ">
+                        <strong class="d-inline-block mb-2 text-success ">Design</strong>
+                        <h3 class="mb-0 ">Web Designs</h3>
+                        <div class="mb-1 text-muted ">Nov 11</div>
+                        <p class="mb-auto ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum libero ducimus. Quos optio ipsam sed, consequuntur maiores mollitia numquam.</p>
+                        <a href="# " class="stretched-link ">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block ">
+                        <img class="bd-placeholder-img " width="200 " height="250 " src="https://source.unsplash.com/500x700/?headphones " alt=" ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2 ">
+            <div class="col-md-6 ">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                    <div class="col p-4 d-flex flex-column position-static ">
+                        <strong class="d-inline-block mb-2 text-danger ">Frontend Developement</strong>
+                        <h3 class="mb-0 ">Python</h3>
+                        <div class="mb-1 text-muted ">Nov 12</div>
+                        <p class="card-text mb-auto ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum libero ducimus. Quos optio ipsam sed, consequuntur maiores mollitia numquam.</p>
+                        <a href="# " class="stretched-link ">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block ">
+                        <img class="bd-placeholder-img " width="200 " height="250 " src="https://source.unsplash.com/500x700/?tech " alt=" ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                    <div class="col p-4 d-flex flex-column position-static ">
+                        <strong class="d-inline-block mb-2 text-warning">Bootstrap</strong>
+                        <h3 class="mb-0 ">Bootstrap Templates</h3>
+                        <div class="mb-1 text-muted ">Nov 11</div>
+                        <p class="mb-auto ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum libero ducimus. Quos optio ipsam sed, consequuntur maiores mollitia numquam.</p>
+                        <a href="# " class="stretched-link ">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block ">
+                        <img class="bd-placeholder-img " width="200 " height="250 " src="https://source.unsplash.com/500x700/?phones " alt=" ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container ">
+        <p class="float-end "><a href="# ">Back to top</a></p>
+        <p>© 2022–2025 Company, Inc. · <a href="# ">Privacy</a> · <a href="# ">Terms</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js " integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js " integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK " crossorigin="anonymous "></script>
+</body>
+
+</html>
